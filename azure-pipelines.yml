@@ -22,6 +22,7 @@ steps:
     goals: 'package'
 - task: AzureWebApp@1
   inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription(22ea6752-d300-4559-a6ba-d711e61d40f2)'
     appType: 'webApp'
     appName: 'testApp'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
